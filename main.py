@@ -71,11 +71,18 @@ def randomMAC():
         hexlist.append(first+second)
     macaddress = ":"
     print('MACAdress', macaddress.join(hexlist))
-    third = random.choice(hexanum)
-    last = random.choice(hexanum)
-    iplist = f"{first}{second}:{third}{last}:{first}{second}:{third}{last}"
-    print(iplist)
 
+def randomIPv6():
+    hexanum = (['0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'])
+    hexlist=[]
+    for i in range(1,9):
+        first = random.choice(hexanum)
+        second = random.choice(hexanum)
+        third = random.choice(hexanum)
+        fourth = random.choice(hexanum)
+        hexlist.append(first+second+third+fourth)
+    ipv6address = ":"
+    print('IPv6Adress', ipv6address.join(hexlist))
 
 randomOddNumber(1, 10)
 
@@ -83,4 +90,5 @@ randomEvenNumber(11,20)
 randomPrimeNumber(0,50)
 randomip()
 randomMAC()
+randomIPv6()
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
