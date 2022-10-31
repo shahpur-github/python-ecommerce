@@ -3,8 +3,15 @@
 # Press ⌃R to execute it or replace it with your code.
 # Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
 #
+<<<<<<< HEAD
 from math import sqrt
 import random
+=======
+import socket
+from math import sqrt
+import random
+import secrets
+>>>>>>> 0530e71 (Initial commit)
 
 # random odd numbers in a range
 def randomOddNumber(l, h):
@@ -39,6 +46,7 @@ def randomPrimeNumber(pl, ph):
     pr = random.choice(p)
     print(pr)
 
+<<<<<<< HEAD
 
 
 
@@ -52,10 +60,51 @@ def randomPrimeNumber(pl, ph):
 
 
 
+=======
+# Get the hostname
+hostn = socket.gethostname()
+ipaddress = socket.gethostbyname(hostn)
+# Get the full qualified domain name
+fqdn = socket.getfqdn('www.google.com')
+# Get the active network address
+A_N_address = socket.gethostbyname_ex(hostn)
+
+print('Hostname: '+hostn, ipaddress)
+print('fqdn: '+fqdn)
+print(A_N_address)
+
+# Generating random IPv4
+def randomip():
+    first = random.randint(0,255)
+    second = random.randint(0,255)
+    third = random.randint(0,255)
+    last = random.randint(0,255)
+    iplist = f"{first}.{second}.{third}.{last}"
+    print(iplist)
+# Generating random MAC
+def randomMAC():
+    hexanum = (['0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'])
+    hexlist=[]
+    for i in range(1,7):
+        first = random.choice(hexanum)
+        second = random.choice(hexanum)
+        hexlist.append(first+second)
+    macaddress = ":"
+    print('MACAdress', macaddress.join(hexlist))
+    third = random.choice(hexanum)
+    last = random.choice(hexanum)
+    iplist = f"{first}{second}:{third}{last}:{first}{second}:{third}{last}"
+    print(iplist)
+>>>>>>> 0530e71 (Initial commit)
 
 
 randomOddNumber(1, 10)
 
 randomEvenNumber(11,20)
 randomPrimeNumber(0,50)
+<<<<<<< HEAD
+=======
+randomip()
+randomMAC()
+>>>>>>> 0530e71 (Initial commit)
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
