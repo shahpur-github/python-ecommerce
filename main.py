@@ -3,15 +3,10 @@
 # Press ⌃R to execute it or replace it with your code.
 # Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
 #
-<<<<<<< HEAD
-from math import sqrt
-import random
-=======
 import socket
 from math import sqrt
 import random
 import secrets
->>>>>>> 0530e71 (Initial commit)
 
 # random odd numbers in a range
 def randomOddNumber(l, h):
@@ -46,21 +41,6 @@ def randomPrimeNumber(pl, ph):
     pr = random.choice(p)
     print(pr)
 
-<<<<<<< HEAD
-
-
-
-
-
-
-
-
-
-
-
-
-
-=======
 # Get the hostname
 hostn = socket.gethostname()
 ipaddress = socket.gethostbyname(hostn)
@@ -95,16 +75,12 @@ def randomMAC():
     last = random.choice(hexanum)
     iplist = f"{first}{second}:{third}{last}:{first}{second}:{third}{last}"
     print(iplist)
->>>>>>> 0530e71 (Initial commit)
 
 
 randomOddNumber(1, 10)
 
 randomEvenNumber(11,20)
 randomPrimeNumber(0,50)
-<<<<<<< HEAD
-=======
 randomip()
 randomMAC()
->>>>>>> 0530e71 (Initial commit)
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
