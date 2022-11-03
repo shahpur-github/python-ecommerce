@@ -8,6 +8,7 @@ from math import sqrt
 import random
 import secrets
 
+
 # random odd numbers in a range
 def randomOddNumber(l, h):
     l = l // 2
@@ -84,7 +85,6 @@ def randomIPv6():
     ipv6address = ":"
     print('IPv6Adress', ipv6address.join(hexlist))
 
-# calling the functions
 
 
 randomOddNumber(1, 10)
@@ -94,5 +94,5 @@ randomPrimeNumber(0,50)
 randomip()
 randomMAC()
 randomIPv6()
-randomMAC()
+
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
