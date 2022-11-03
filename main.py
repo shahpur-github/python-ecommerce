@@ -7,6 +7,7 @@ import socket
 from math import sqrt
 import random
 import secrets
+import RandomOddEvenNumbers
 
 
 # random odd numbers in a range
@@ -86,11 +87,13 @@ def randomIPv6():
     print('IPv6Adress', ipv6address.join(hexlist))
 
 
+cvar = RandomOddEvenNumbers.RandomOddEvenNumbers()
+print('from other class')
+cvar.randomOddNumber(1,15)
+cvar.randomPrimeNumber(1,10)
 
-randomOddNumber(1, 10)
+cvar.randomEvenNumber(11,20)
 
-randomEvenNumber(11,20)
-randomPrimeNumber(0,50)
 randomip()
 randomMAC()
 randomIPv6()

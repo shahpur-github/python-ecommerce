@@ -6,7 +6,7 @@ import random
 import secrets
 class RandomOddEvenNumbers:
     pass
-
+    @staticmethod
     # random odd numbers in a range
     def randomOddNumber(l, h):
         l = l // 2
@@ -15,6 +15,7 @@ class RandomOddEvenNumbers:
         oddnum = (oddnum * 2) + 1
         print(oddnum)
 
+    @staticmethod
     # random even number in a range
     def randomEvenNumber(el, eh):
         el = el // 2
@@ -25,11 +26,15 @@ class RandomOddEvenNumbers:
         print(oddnum)
         # random prime number
 
+    @staticmethod
     def randomPrimeNumber(pl, ph):
         p = ([i for i in range(pl, ph) if isPrime(i)])
         pr = random.choice(p)
         print(pr)
     # Prime number
+
+
+
 def isPrime(n):
     if n == 2 or n == 3: return True
     if n < 2 or n % 2 == 0 or n % 3 == 0: return False
