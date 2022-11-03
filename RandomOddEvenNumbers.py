@@ -45,11 +45,3 @@ def isPrime(n):
             return True
 
 
-
-
-
-
-
-RandomOddEvenNumbers.randomOddNumber(1,100)
-
-RandomOddEvenNumbers.randomPrimeNumber(1,50)
