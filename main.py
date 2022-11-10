@@ -8,6 +8,7 @@ from math import sqrt
 import random
 import secrets
 import RandomOddEvenNumbers
+import DigitSumAlgorithm
 
 
 # Get the hostname
@@ -52,7 +53,10 @@ def randomIPv6():
         hexlist.append(first+second+third+fourth)
     ipv6address = ":"
     print('IPv6Adress', ipv6address.join(hexlist))
+dumy = 0
 
+vard =DigitSumAlgorithm.DigitSumAlgorithm()
+vard.digitsum()
 
 cvar = RandomOddEvenNumbers.RandomOddEvenNumbers()
 print('from other class')
