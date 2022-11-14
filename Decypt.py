@@ -46,4 +46,12 @@ decode = decrypt(ciphertext, key)
 # Output...
 print("Ciphertext:")
 print(ciphertext)
-print('Your Decoded text:', decode)
+
+
+print("...")
+time.sleep(1)
+print("Decrypting Ciphertext...")
+time.sleep(1)
+print("...")
+time.sleep(1)
+print('Your Decoded text: ', decode)
