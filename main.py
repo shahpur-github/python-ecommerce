@@ -55,8 +55,10 @@ def randomIPv6():
     print('IPv6Adress', ipv6address.join(hexlist))
 dumy = 0
 
-vard =DigitSumAlgorithm.DigitSumAlgorithm()
-vard.digitsum()
+#vard =DigitSumAlgorithm.DigitSumAlgorithm()
+#vard.digitsum()
+x='hello'[0]
+print(x)
 
 cvar = RandomOddEvenNumbers.RandomOddEvenNumbers()
 print('from other class')

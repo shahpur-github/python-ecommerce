@@ -12,22 +12,19 @@ def encrypt(plaintext, key):
         ciphertext = ciphertext + character
         for j in range(0, key):
             ciphertext = ciphertext + random.choice(alphabet)
-    print('my cephertext:', ciphertext)
     return ciphertext
 
-
+# A solution to basic encryption algorithm
 def decrypt(ciphertext, key):
     decod = ''
-    print('plaintext length:', len(ciphertext))
     for h in range(0, len(ciphertext)):
         for g in range(0, key):
             ciphertext = ciphertext[:-1]
+        if len(ciphertext) != 0:
+            decod += ciphertext[-1]
 
-        decod += ciphertext[-1]
         ciphertext = ciphertext[:-1]
-        print('decod: ', decod)
-    return decod
-
+    return decod[::-1]
 
 # Main program starts here...
 # Input...
@@ -49,4 +46,4 @@ decode = decrypt(ciphertext, key)
 # Output...
 print("Ciphertext:")
 print(ciphertext)
-print('Decoded text:', decode)
+print('Your Decoded text:', decode)
