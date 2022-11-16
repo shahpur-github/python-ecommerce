@@ -45,3 +45,16 @@ def isPrime(n):
             return True
 
 
+def Iseven(n):
+    ev=n%2
+    if ev ==0:
+        return True
+    else:
+        return False
+
+def Isodd(n):
+    if (n%2) != 0:
+        return True
+    else:
+        return False
+
